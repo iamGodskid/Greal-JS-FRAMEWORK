@@ -8,26 +8,22 @@ as it renders directly to dom
 
 ### download/installation
 
-[Download/install grealjs](iamGodskid/GrealJsWebPage
+[Download/install grealjs](https://github.com/iamGodskid/GrealJS/archive/refs/tags/v1.5.2.zip)
 
+## USING GREALJS
 
+reference these scripts after in your html file
 
-```markdown
-Syntax highlighted code block
+```html
 
-# Header 1
-## Header 2
-### Header 3
+<script src="path/to/Greal.js"></script>
+<script src="path/to/greal.min.js"></script>
+```
 
-- Bulleted
-- List
+## USAGE
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```javascript
+https://github.com/iamGodskid/GrealJS/archive/refs/tags/v1.5.2.zip
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
