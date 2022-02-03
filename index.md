@@ -23,7 +23,74 @@ reference these scripts after in your html file
 ## USAGE
 
 ```javascript
-https://github.com/iamGodskid/GrealJS/archive/refs/tags/v1.5.2.zip
+
+//buildComponents method mounts template directly to body
+const app = new GrealComponent();
+app.buildComponents(()=>{
+    return (`
+<button @click="pop" g-id="btn">{{component}}</button>
+    `)
+});
+app.hooks({
+component: "click me",
+btn: "button",
+})
+app.bindEvent("#btn", "click", {
+    event: ()=>{
+        document.write("LOREM IPSUM DOLOR AMIT");
+    }
+});
+//the above method binds events to element as it prevents element from controlling other events
+//you could use the Events method 
+
+app.Events({
+pop:()=>{
+alert("hello world");
+}
+})
+
+//you could use the mountedComponent() method to load elements to target parent element after document loads
+const App = new GrealComponent();
+App.mountComponent("#app", {
+    template: `
+<h1 id="text">Loren ipsum dolor Amit</h1>
+<span></span>
+    `
+});
+
+//using Events() method to handle events
+const x = new GrealComponent();
+x.buildComponents(()=>{
+return (`
+<button @click="pop">{{popper}}</button>
+`)
+});
+x.Events({
+pop: ()=>{
+alert("popped");
+}
+})
+//grealjs provides hooks to handle data states just like the react states
+x.hooks({
+popper: "i am a component"
+})
+//recent upgrade to grealjs is
+//the createStylesheet method
+//it gives you privillege to work with actual css in greal
+
+x.createStyleSheet(()=>{
+return(
+`
+button{
+background: rgb(20,230,50);
+color:white;
+}
+`
+)
+
+})
+
+
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
