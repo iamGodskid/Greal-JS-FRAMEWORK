@@ -3,11 +3,14 @@
 
 You can use the [editor on GitHub](https://github.com/iamGodskid/Greal-JS-FRAMEWORK/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+it is structured to to have easy syntax... managability and be fast.
+as it renders directly to dom
 
-### Markdown
+### download/installation
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Download/install grealjs](iamGodskid/GrealJsWebPage
+
+
 
 ```markdown
 Syntax highlighted code block
